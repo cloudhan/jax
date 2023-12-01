@@ -94,6 +94,9 @@ cc_binary(
         ],
     }),
     visibility = ["//visibility:public"],
+    srcs = [
+        "@flatbuffers//src:flatc_main.cpp",
+    ],
     deps = [
         "@flatbuffers//src:flatc",
     ],
